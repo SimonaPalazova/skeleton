@@ -6,7 +6,7 @@ const { errorHandler } = require('./middlewares/errorHandlerMiddleware');
 require('./config/express')(app);
 require('./config/routes')(app);
 
-app.use(errorHandler);
+
 
 dbConnection()
     .then(() => console.log('DB Connected successfully!'))
