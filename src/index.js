@@ -1,8 +1,6 @@
 const app = require('express')();
 const dbConnection = require('./config/dbConfig')
 
-const { errorHandler } = require('./middlewares/errorHandlerMiddleware');
-
 require('./config/express')(app);
 require('./config/routes')(app);
 
